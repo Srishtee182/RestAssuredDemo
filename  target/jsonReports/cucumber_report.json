@@ -1,0 +1,308 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-25T20:07:26.448Z",
+        "line": 14,
+        "name": "Verify if place is been successfully added using add place API",
+        "description": "",
+        "id": "place-api-s;verify-if-place-is-been-successfully-added-using-add-place-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2005979200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add place payload with \"john\" \"English\" \"paradise streat\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"john\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"English\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"paradise streat\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinations.AddPlaceDefinations.add_place_payload(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2629474100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls \"addPlaceAPI\" with \"Post\" Http Request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"addPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Post\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinations.AddPlaceDefinations.user_calls_with_post_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 998300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the API call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinations.AddPlaceDefinations.the_api_call_is_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 958952500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"status\" code should be \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefinations.AddPlaceDefinations.code_should_be(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30920200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"scope\" code should be \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"scope\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"APP\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinations.AddPlaceDefinations.code_should_be(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20940700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify the place id created maps to \"john\" using \"getPlaceAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"john\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"getPlaceAPI\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepDefinations.AddPlaceDefinations.verify_the_place_id_created_maps_to_using(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-25T20:07:32.205Z",
+        "line": 15,
+        "name": "Verify if place is been successfully added using add place API",
+        "description": "",
+        "id": "place-api-s;verify-if-place-is-been-successfully-added-using-add-place-api;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7499200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add place payload with \"alexa\" \"German\" \"Hamburg germany\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"alexa\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"German\"",
+                  "offset": 31
+                },
+                {
+                  "val": "\"Hamburg germany\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinations.AddPlaceDefinations.add_place_payload(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 931502800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls \"addPlaceAPI\" with \"Post\" Http Request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"addPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Post\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinations.AddPlaceDefinations.user_calls_with_post_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the API call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinations.AddPlaceDefinations.the_api_call_is_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 21942500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"status\" code should be \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefinations.AddPlaceDefinations.code_should_be(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22938700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"scope\" code should be \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"scope\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"APP\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinations.AddPlaceDefinations.code_should_be(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24451200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify the place id created maps to \"alexa\" using \"getPlaceAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"alexa\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"getPlaceAPI\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepDefinations.AddPlaceDefinations.verify_the_place_id_created_maps_to_using(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          }
+        ]
+      }
+    ],
+    "name": "Place API\u0027s",
+    "description": "",
+    "id": "place-api-s",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/PlaceScenarios.feature",
+    "tags": []
+  }
+]
