@@ -26,10 +26,11 @@ public class AddPlaceDefinations extends Utils {
 	Response addPlaceResponse;
 	String stringResponse;
 	static String placeId;
-	TestData data= new TestData();
+	TestData data = new TestData();
+
 	@Given("Add place payload with {string} {string} {string}")
 	public void add_place_payload(String name, String language, String address) throws IOException {
-		
+
 		givenRequest = given().spec(reqestSpecification()).body(data.addPlace(name, language, address));
 	}
 
@@ -55,23 +56,20 @@ public class AddPlaceDefinations extends Utils {
 
 	@Then("{string} code should be {string}")
 	public void code_should_be(String key, String value) {
-		
+
 		Assert.assertEquals(getJsonPath(addPlaceResponse, key), value);
 	}
 
 	@Then("verify the place id created maps to {string} using {string}")
 	public void verify_the_place_id_created_maps_to_using(String string, String string2) {
-		placeId= getJsonPath(addPlaceResponse,"place_id");
+		placeId = getJsonPath(addPlaceResponse, "place_id");
 		given().spec(givenRequest).queryParam("place_id", placeId);
 	}
-	
 
 	@Given("User have delete payload")
 	public void user_have_delete_payload() throws IOException {
-		givenRequest  = given().spec(reqestSpecification()).body(data.deletePlacePayload(placeId));
-		
+		givenRequest = given().spec(reqestSpecification()).body(data.deletePlacePayload(placeId));
+
 	}
-
-
 
 }
